@@ -9,11 +9,11 @@ public class Pembelian {
         try (Scanner input = new Scanner(System.in)) {
             Penumpang penumpang = null;
             Penerbangan penerbanganTerpilih = null;
-            
+
             // Menambahkan penerbangan (Contoh)
             daftarPenerbangan.add(new Penerbangan("GA101", "CGK, Jakarta", "DPS, Bali", "06:30", "08:15", 1200000));
             daftarPenerbangan.add(new Penerbangan("QZ202", "SUB, Surabaya", "KNO, Medan", "09:00", "11:45", 1350000));
-            
+
             int pilihan;
             do {
                 // Tampilkan Menu
@@ -24,7 +24,7 @@ public class Pembelian {
                 System.out.println("4. Exit");
                 System.out.print("Silahkan pilih menu: ");
                 pilihan = input.nextInt();
-                
+
                 switch (pilihan) {
                     case 1 -> {
                         // Tampilkan Daftar Penerbangan
@@ -43,16 +43,22 @@ public class Pembelian {
                         String namaDepan = input.nextLine();
                         System.out.print("Masukkan Nama Belakang: ");
                         String namaBelakang = input.nextLine();
-                        
+
                         penumpang = new Penumpang(NIK, namaDepan, namaBelakang);
-                        
+
                         System.out.println("\nPilih nomor penerbangan:");
                         for (int i = 0; i < daftarPenerbangan.size(); i++) {
                             System.out.println((i + 1) + ". " + daftarPenerbangan.get(i).getnomorPenerbangan());
                         }
-                        
+
+                        // Meminta input setelah semua penerbangan ditampilkan
+                        System.out.print("Masukkan pilihan: ");
                         int pilihanPenerbangan = input.nextInt();
-                        penerbanganTerpilih = daftarPenerbangan.get(pilihanPenerbangan - 1);
+                        if (pilihanPenerbangan > 0 && pilihanPenerbangan <= daftarPenerbangan.size()) {
+                            penerbanganTerpilih = daftarPenerbangan.get(pilihanPenerbangan - 1);
+                        } else {
+                            System.out.println("Pilihan penerbangan tidak valid!");
+                        }
                     }
                     case 3 -> {
                         // Tampilkan Pesanan Tiket

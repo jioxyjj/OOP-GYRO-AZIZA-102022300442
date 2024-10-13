@@ -8,7 +8,6 @@ class Penerbangan {
     private String waktuKedatangan;
     private float hargaTiket;
 
-    //Constructor
     public Penerbangan(String np, String bk, String bt, String wkb, String wkd, float ht){
         this.nomorPenerbangan = np;
         this.bandaraKeberangkatan = bk;

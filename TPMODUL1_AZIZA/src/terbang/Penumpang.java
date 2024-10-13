@@ -1,9 +1,9 @@
 package terbang;
 
 class Penumpang {
-    private final String NIK;
-    private final String namaDepan;
-    private final String namaBelakang;
+    private String NIK;
+    private String namaDepan;
+    private String namaBelakang;
 
     public Penumpang(String NIK, String namaDepan, String namaBelakang) {
         this.NIK = NIK;
