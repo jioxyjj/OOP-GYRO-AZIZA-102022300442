@@ -49,6 +49,4 @@ class Penerbangan {
         System.out.println("Harga Tiket: Rp." + hargaTiket);
         System.out.println();
     }
-
-
 }
