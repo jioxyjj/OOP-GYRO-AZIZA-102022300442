@@ -1,4 +1,5 @@
-package modultuh;
+package halo;
+
 public class Burung extends Hewan{
     private  String warnaBulu;
 

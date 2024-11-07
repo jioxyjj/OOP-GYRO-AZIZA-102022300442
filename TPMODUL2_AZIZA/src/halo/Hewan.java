@@ -1,4 +1,4 @@
-package modultuh;
+package halo;
 
 public class Hewan {
     protected String nama;

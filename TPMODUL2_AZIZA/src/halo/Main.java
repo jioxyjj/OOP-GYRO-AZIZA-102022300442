@@ -1,4 +1,4 @@
-package modultuh;
+package halo;
 
 public class Main {
     public static void main(String[] args) {

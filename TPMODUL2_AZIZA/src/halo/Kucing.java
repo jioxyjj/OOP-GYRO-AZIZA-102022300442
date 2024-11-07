@@ -1,4 +1,4 @@
-package modultuh;
+package halo;
 
 public class Kucing extends Hewan {
     private String ras;
