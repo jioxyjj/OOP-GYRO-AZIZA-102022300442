@@ -13,7 +13,7 @@ class Komputer {
     // To do: Buatlah Method Informasi dengan isi yang sesuai dengan ketentuan 
 
     public void Informasi(){
-        System.out.println("jumlah komputer: " + jumlahKomputer);
+        System.out.println("\nJumlah komputer: " + jumlahKomputer);
         System.out.println("Nama Warnet : " + namaWarnet);
         System.out.println("Harga Per Jam : " + hargaPerJam);
     }
