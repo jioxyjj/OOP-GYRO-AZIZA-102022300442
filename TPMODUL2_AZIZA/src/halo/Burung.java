@@ -18,5 +18,4 @@ public class Burung extends Hewan{
         super.infoHewan();
         System.out.println("Warna bulu : " + warnaBulu);
     }
-
 }

@@ -15,6 +15,7 @@ public class Hewan {
     public void makan(){
         System.out.println(nama + " sedang makan");
     }
+    //overloading
     public void makan(String makanan){
         System.out.println(nama + " sedang makan " + makanan);
     }
