@@ -24,7 +24,7 @@ class KomputerVIP extends Komputer {
     }
     // To do: Buatlah method Login sesuai dengan ketentuan
     public void Login(String Username){
-        System.out.println("Username : " + Username);
+        System.out.println("\nUsername : " + Username);
     }    
     // To do: Buatlah method Bermain sesuai dengan ketentuan
     public void Bermain(int jam){
@@ -32,6 +32,6 @@ class KomputerVIP extends Komputer {
     }
     // To do: Buatlah method Bermain memakai Polymorphism Overloading sesuai dengan ketentuan
     public void Bermain(int jam, int menitTambahan){
-        System.out.println("Nambah biling selama " + jam + " jam" + menitTambahan + " menit");
+        System.out.println("Nambah biling selama " + jam + " jam " + menitTambahan + " menit");
     }
 }

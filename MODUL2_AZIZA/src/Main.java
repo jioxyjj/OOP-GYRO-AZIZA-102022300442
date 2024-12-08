@@ -31,7 +31,7 @@ public class Main {
         KomputerPremium komputerpremium2 = new KomputerPremium(12, "Jijah Gaming", 25000, false);
         komputerpremium2.Informasi();   
         komputerpremium2.Pesan(7);     
-       komputerpremium2.TambahLayanan("Ayam gulai");
-       komputerpremium2.TambahLayanan("Soto medan", "Es rujak");
+        komputerpremium2.TambahLayanan("Ayam gulai");
+        komputerpremium2.TambahLayanan("Soto medan", "Es rujak");
     }
 }
